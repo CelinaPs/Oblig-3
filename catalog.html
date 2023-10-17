@@ -4,6 +4,81 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
+        <link href="css/font/css/fontawesome.css" rel="stylesheet">
+        <link href="css/font/css/brands.css" rel="stylesheet">
+        <link href="css/font/css/solid.css" rel="stylesheet">
         <title>Katalog</title>
     </head>
+    <body>
+        <div id="grid-container">
+        <header>
+            <nav>
+                <a href="#" id="logo">Logo</a>
+                <div> <!--Flytta begge ikonene til høyre, et et eget element-->
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i id="ham" class="fa-solid fa-bars"></i>
+                </div>
+                <ul class="navbar">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#products.html">Products</a></li> <!--Blir sent til siden produkts.html-->
+                    <li><a href="#services">Services</a></li>
+                </ul>
+            </nav>
+            <section>
+                <h1>Bolleoppskrifter</h1>
+                <a href="#" class="black-btn">Read more</a>
+            </section>
+        </header>
+        <main>
+            <!--Seksjon 1-->
+            <section class="flex-section">
+                <img src="https://placehold.co/600x400" alt="Grå placeholder bilde">
+                <section>
+                    <h2>Cupcake</h2>
+                    <p>Cupcake ipsum dolor sit amet cookie croissant cheesecake chupa chups</p>
+                </section>
+            </section>
+            <!--Seksjon 2-->
+            <section class="flex-section right">
+                <img src="https://placehold.co/600x400" alt="Grå placeholder bilde">
+                <section>
+                    <h2>Cupcake</h2>
+                    <p>Cupcake ipsum dolor sit amet cookie croissant cheesecake chupa chups</p>
+                </section>
+            </section>
+            <!--Seksjon 3-->
+            <section id="services">
+                <h2>Services</h2>
+                <article>
+                    <h3>Cupcake</h3>
+                    <p>upcake ipsum dolor sit amet cookie croissant cheesecake chupa chups</p>
+                </article>
+                <article>
+                    <h3>Cupcake</h3>
+                    <p>upcake ipsum dolor sit amet cookie croissant cheesecake chupa chups</p>
+                </article>
+                <article>
+                    <h3>Cupcake</h3>
+                    <p>upcake ipsum dolor sit amet cookie croissant cheesecake chupa chups</p>
+                </article>
+            </section>
+        </main>
+        <footer>
+
+        </footer>
+        </div>
+        <script>
+
+            let x = document.querySelector(".navbar")
+
+            document.getElementById("ham").addEventListener("click", (e) =>{
+                if (x.className ==="navbar") {
+                    x.className += " responsive";
+                } else{
+                    c.className = "navbar"
+                }
+            })
+
+        </script>
+    </body>
 </html>

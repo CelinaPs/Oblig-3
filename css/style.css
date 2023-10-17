@@ -1,107 +1,141 @@
-*{
-    box-sizing: border-box;
-}
 body{
-    margin: 0;
-    max-width: 1400px;
     font-family: Arial, Helvetica, sans-serif;
-    width: 100%
 }
 
 #grid-container{
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas: "topp" 
-                        "hovedomraade" 
-                        "sidebar" 
-                        "baann";
+    grid-template-areas: "header" "main" "footer";
+    padding: 1rem;
+}
+
+header, main, footer{
+    padding: 1rem;
 }
 
 header{
-    grid-area:topp;
+    font-size: 1.5rem;
+    font-weight: 600;
+    grid-area: header;
 }
 
-main{
-    grid-area:hovedomraade;
+header nav{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
 }
 
-aside{
-    grid-area:sidebar;
-}
-
-footer{
-    grid-area:baann;
+header nav div{
+    display: flex;
+    gap: 1rem;
 }
 
 #logo{
+
     text-decoration: none;
-    font-size: 18px;
-    font-weight: 600;
-    color: aquamarine;
+
 }
 
-header{
+.navbar{
+    display: none;
+}
+
+.responsive{
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-}
-
-header nav ul{
-    display: flex;
-    gap: 0.5rem;
-    list-style: none;
-}
-
-.default-flex{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.default-flex h2{
-    flex-basis: 100%;
-}
-
-.default-flex article{
-    flex-basis: 33%;
-    min-width: 300px;
-}
-
-.default-flex article img{
+    flex-direction: column;
+    position: absolute;
+    background-color: rgb(16, 16, 16);
+    margin: 0;
+    padding: 0;
+    top:40px;
     width: 100%;
+    list-style: none;
+    gap: 1rem;
 }
 
-@media only screen and (min-width:850px){
-    #grid-container{
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+.responsive a{
+    color: azure;
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
 }
 
-header{
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end:2;
+.black-btn{
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    background-color: black;
+    color: bisque;
+    border-radius: 5px;
+    font-weight: 400;
 }
 
 main{
-    grid-column-start:1;
-    grid-column-end:2;
-    grid-row-start:2;
-    grid-row-end:3;
+    grid-area: main;
 }
 
-aside{
-    grid-column-start:3;
-    grid-column-end:4;
-    grid-row-start:2;
-    grid-row-end:3;
+main section img{
+    width: 100%;
 }
 
 footer{
-    grid-column-start:1;
-    grid-column-end:4;
-    grid-row-start:3;
-    grid-row-end:4;
+    grid-area: footer;
+}
+
+#services{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(179, 179, 179);
+    padding: 1rem;
+    justify-content: space-around;
+}
+
+#services h2{
+    width: 100%;
+    text-align: center;
+}
+
+#services article{
+    max-width: 300px;
+    width: 100%;
+    min-width: 200px;
+}
+
+
+
+@media only screen and (min-width:600px){
+    #grid-container{
+        grid-template-areas: "header header header" ". main ." "footer footer footer" ;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        gap: 1 rem;
+        list-style: none;
+        margin: 0;
+    }   
+
+    #ham, .fa-magnifying-glass{
+        display: none;
+    }
+
+    .flex-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .flex-section img{
+        width: 50%;
+    }
+
+    .flex-section section{
+        padding: 1rem;
+        width: 40%;
+        align-self: center;
+    }
+
+    .right img{
+        order:1;
+    }
 }
