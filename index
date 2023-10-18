@@ -12,6 +12,17 @@
     <body>
         <div id="grid-container">
             <header>
+                <section class="top-text">
+                    <article class="left-col">
+                       <p>Gratis frakt og retur!</p>
+                    </article>
+                    <article class="middle-col">
+                       <p>30 dagers åpent kjøp!</p>
+                    </article>
+                    <article class="right-col">
+                       <p>Hjemmelevering 2-5 dager!</p>
+                    </article>
+                 </section>
                 <nav>
                     <a href="#" id="logo">NORDSKO</a>
                     <div> <!--Flytta begge ikonene til høyre, et et eget element-->
@@ -21,13 +32,13 @@
                     <ul class="navbar">
                         <li><a href="#">Home</a></li>
                         <li><a href="#products.html">Produkter</a></li> <!--Blir sent til products.html-->
-                        <li><a href="#catalog.html">Katalog</a></li><!--Blir sent til catalog.html-->
+                        <li><a href="#">NY</a></li>
+                        <li><a href="#catalog.html">Dame</a></li>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Barn</a></li>
+                        <li><a href="#">Sport</a></li>
                     </ul>
                 </nav>
-                <section>
-                    <h1>Sko</h1>
-                    <a href="#" class="black-btn">Read more</a>
-                </section>
             </header>
             <main>
                 <section>
@@ -40,7 +51,10 @@
                     </div>
                   </div>
                 </section>
-
+                <!--Se alle tilbud!-->
+                <section>
+                    <a href="#" class="black-btn">Read more</a>
+                </section>
             </main>
             <footer>
     

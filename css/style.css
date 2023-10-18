@@ -5,19 +5,12 @@ body{
 #grid-container{
     display: grid;
     grid-template-areas: "header" "main" "footer";
-    padding: 1rem;
-}
-
-#topBlackBar {
-    border-top: 100px solid #000;
-  }
-
-  header, main, footer{
-    padding: 0;
+    padding: 1px;
 }
 
 header{
-    background-color: rgb(199, 66, 66);
+    background-color: rgb(27, 27, 27);
+    height: 90px;
     font-size: 1.5rem;
     font-weight: 600;
     grid-area: header;
@@ -32,8 +25,39 @@ header nav{
 
 header nav div{
     display: flex;
-    gap: 1rem;
+    gap: 0;
 }
+
+.top-text{
+    display: flex;
+    justify-content: space-between;
+    column-count: 3;
+    color: white;
+    font-size: x-small;
+    font-weight:500;
+    column-gap: 33%;
+    column-span: all;
+    margin: 0;
+    padding: 0;
+   }
+
+
+ .left-col {
+    width: 33%;
+    text-align: left;
+ }
+
+ .middle-col {
+    width: 33%;
+    text-align: left;
+ }
+
+ .right-col {
+    width: 33%;
+    text-align: left;
+ }
+
+   
 
 #logo{
 
@@ -42,7 +66,24 @@ header nav div{
 }
 
 .navbar{
+    bottom: -40;
+    right: 0;
+    position: absolute;
     display: none;
+}
+
+.navbar a{
+    float:left;
+    display: block;
+    color: rgb(19, 19, 19);
+    text-align: center;
+    padding: 10px 14px;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    background-color: aqua;
+    color: black;
 }
 
 .responsive{
@@ -61,13 +102,13 @@ header nav div{
 .responsive a{
     color: azure;
     display: inline-block;
-    padding: 1rem;
+    padding: 0;
     text-decoration: none;
 }
 
 .black-btn{
     display: inline-block;
-    padding: 1rem;
+    padding: 0;
     text-decoration: none;
     background-color: rgb(86, 24, 24);
     color: bisque;
@@ -92,7 +133,7 @@ footer{
     flex-direction: row;
     flex-wrap: wrap;
     background-color: rgb(179, 179, 179);
-    padding: 1rem;
+    padding: 0;
     justify-content: space-around;
 }
 
@@ -114,7 +155,7 @@ footer{
     .navbar{
         display: flex;
         flex-direction: row;
-        gap: 1 rem;
+        gap: 10px;
         list-style: none;
         margin: 0;
     }   
@@ -144,4 +185,10 @@ footer{
         width: 45vw;
         height: 45vh;
     }
+
+    .categories{
+        display: flex;
+        padding: 1rem;
+    }
+    
 }
