@@ -2,15 +2,17 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#grid-container{
+#grid-container {
     display: grid;
+    grid-template-columns: 1fr;
     grid-template-areas: "header" "main" "footer";
     padding: 1px;
+    height: 100vh;
 }
 
 header{
     background-color: rgb(27, 27, 27);
-    height: 90px;
+    height: 120px;
     font-size: 1.5rem;
     font-weight: 600;
     grid-area: header;
@@ -21,6 +23,7 @@ header nav{
     display: flex;
     justify-content: space-between;
     position: relative;
+    height: 100px;
 }
 
 header nav div{
@@ -57,11 +60,12 @@ header nav div{
     text-align: left;
  }
 
-   
+
 
 #logo{
 
     text-decoration: none;
+    color: black;
 
 }
 
@@ -77,7 +81,7 @@ header nav div{
     display: block;
     color: rgb(19, 19, 19);
     text-align: center;
-    padding: 10px 14px;
+    padding: 10px 10px;
     text-decoration: none;
 }
 
@@ -106,15 +110,29 @@ header nav div{
     text-decoration: none;
 }
 
-.black-btn{
-    display: inline-block;
+.black-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
     padding: 0;
     text-decoration: none;
-    background-color: rgb(86, 24, 24);
-    color: bisque;
+    background-color: rgb(30, 30, 30);
+    color: rgb(255, 255, 255);
     border-radius: 5px;
     font-weight: 400;
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    margin-right: -50%;
 }
+
+.black-btn text{
+    display: flex;
+    justify-content: center;
+}
+
 
 main{
     grid-area: main;
@@ -122,6 +140,7 @@ main{
 
 main section img{
     width: 100%;
+
 }
 
 footer{
@@ -177,18 +196,22 @@ footer{
     }
 
     .row img{
-        width: 30vh;
-        height: 30vh;
+        width: 50vw;
+        height: 50vw;
     }
 
     .column img{
-        width: 45vw;
-        height: 45vh;
+        width: 48vw;
+        height: 80vw;
     }
 
     .categories{
         display: flex;
-        padding: 1rem;
+        padding: 0;
     }
     
+    .footer{
+        background-color: rgb(21, 21, 21);
+    }
+
 }
