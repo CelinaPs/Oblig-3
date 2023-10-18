@@ -7,85 +7,62 @@
         <link href="css/font/css/fontawesome.css" rel="stylesheet">
         <link href="css/font/css/brands.css" rel="stylesheet">
         <link href="css/font/css/solid.css" rel="stylesheet">
-        <title>Forside</title>
+        <title>Hovedside</title>
     </head>
     <body>
-        <div id="gridcontainer">
-        <header>
-            <nav>
-                <a href="#" id="logo">Logo</a>
-                <div>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <i id="ham" class="fa-solid fa-bars"></i>
-                </div>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">About</a></li>
-                </ul>
-            </nav>
-            <section>
-                <h1>Bolleoppskrifter</h1>
-                <a href="#" class="black-btn">Read more</a>
-            </section>
-        </header>
-        <main>
-            <!--Seksjon 1-->
-            <section class="flex-section">
-                <img src="https://placehold.co/600x400" alt="Grå placeholder bilde">
+        <div id="grid-container">
+            <header>
+                <nav>
+                    <a href="#" id="logo">NORDSKO</a>
+                    <div> <!--Flytta begge ikonene til høyre, et et eget element-->
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i id="ham" class="fa-solid fa-bars"></i>
+                    </div>
+                    <ul class="navbar">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#products.html">Produkter</a></li> <!--Blir sent til products.html-->
+                        <li><a href="#catalog.html">Katalog</a></li><!--Blir sent til catalog.html-->
+                    </ul>
+                </nav>
                 <section>
-                    <h2>Cupcake</h2>
-                    <p>Cupcake ipsum dolor sit amet cookie croissant cheesecake chupa chups</p>
+                    <h1>Sko</h1>
+                    <a href="#" class="black-btn">Read more</a>
                 </section>
-            </section>
-            <!--Seksjon 2-->
-            <section class="flex-section right">
-                <img src="https://placehold.co/600x400" alt="Grå placeholder bilde">
-                <section>
-                    <h2>Cupcake</h2>
-                    <p>Cupcake ipsum dolor sit amet cookie croissant cheesecake chupa chups</p>
+            </header>
+            <main>
+                <!--Seksjon 1-->
+                <section class="flex-section">
+                    <img src="img/forside-venstre.jpg" alt="forside-venstre">
+
                 </section>
-            </section>
-            <!--Seksjon 3-->
-            <section id="services">
-                <h2>Services</h2>
-                <article>
-                    <h3>Cupcake</h3>
-                    <p>upcake ipsum dolor sit amet cookie croissant cheesecake chupa chups</p>
-                </article>
-                <article>
-                    <h3>Cupcake</h3>
-                    <p>upcake ipsum dolor sit amet cookie croissant cheesecake chupa chups</p>
-                </article>
-                <article>
-                    <h3>Cupcake</h3>
-                    <p>upcake ipsum dolor sit amet cookie croissant cheesecake chupa chups</p>
-                </article>
-            </section>
-        </main>
-        <aside>
-            <h3>Aside elements</h3>
-            <ul>
-                <li>Løpesko</li>
-                <li>Tursko</li>
-                <li>Dansesko</li>
-                <li>Pensko</li>
-            </ul>
-        </aside>
-        <footer>Skodrømmen 2023</footer>
-        </div>
-        <script>
+                <!--Seksjon 2-->
+                <section class="flex-section-right">
+                    <img src="img/forside-høyre.png" alt="forside-høyre">
+                </section>
 
-        let x = document.querySelector(".navbar")
+                <div class="container">
+                    <img src="BLAHBLAH" alt="forside">
+                 </div>
+                <div class="container"> 
+                    <img class="middle-img" src="img/forside-høyre.png" etcetc>
 
-        document.getElementById("ham").addEventListener("click", (e) =>{
-            if (x.className ==="navbar") {
-                x.className += " responsive";
-            } else{
-                c.className = "navbar"
-            }
-        })
-
-        </script>
-    </body>
-</html>
+            </main>
+            <footer>
+    
+            </footer>
+            </div>
+            <script>
+    
+                let x = document.querySelector(".navbar")
+    
+                document.getElementById("ham").addEventListener("click", (e) =>{
+                    if (x.className ==="navbar") {
+                        x.className += " responsive";
+                    } else{
+                        c.className = "navbar"
+                    }
+                })
+    
+            </script>
+        </body>
+    </html>
