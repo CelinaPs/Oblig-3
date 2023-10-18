@@ -30,21 +30,16 @@
                 </section>
             </header>
             <main>
-                <!--Seksjon 1-->
-                <section class="flex-section">
-                    <img src="img/forside-venstre.jpg" alt="forside-venstre">
-
+                <section>
+                <div class="row">
+                    <div class="column">
+                      <img class="fill" src="img/forside-venstre.jpg">
+                    </div>
+                    <div class="column">
+                      <img class="fill" src="img/forside-høyre.png" style="fill: none;">
+                    </div>
+                  </div>
                 </section>
-                <!--Seksjon 2-->
-                <section class="flex-section-right">
-                    <img src="img/forside-høyre.png" alt="forside-høyre">
-                </section>
-
-                <div class="container">
-                    <img src="BLAHBLAH" alt="forside">
-                 </div>
-                <div class="container"> 
-                    <img class="middle-img" src="img/forside-høyre.png" etcetc>
 
             </main>
             <footer>

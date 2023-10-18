@@ -8,17 +8,23 @@ body{
     padding: 1rem;
 }
 
-header, main, footer{
-    padding: 1rem;
+#topBlackBar {
+    border-top: 100px solid #000;
+  }
+
+  header, main, footer{
+    padding: 0;
 }
 
 header{
+    background-color: rgb(199, 66, 66);
     font-size: 1.5rem;
     font-weight: 600;
     grid-area: header;
 }
 
 header nav{
+    background-color: white;
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -63,7 +69,7 @@ header nav div{
     display: inline-block;
     padding: 1rem;
     text-decoration: none;
-    background-color: black;
+    background-color: rgb(86, 24, 24);
     color: bisque;
     border-radius: 5px;
     font-weight: 400;
@@ -101,8 +107,6 @@ footer{
     min-width: 200px;
 }
 
-
-
 @media only screen and (min-width:600px){
     #grid-container{
         grid-template-areas: "header header header" ". main ." "footer footer footer" ;
@@ -119,38 +123,25 @@ footer{
         display: none;
     }
 
-    .flex-section {
+        box-sizing: border-box;{
+    }
+      
+    .row{
         display: flex;
-        flex-direction:row;
-        justify-content: space-between;
+    }
+      
+    .column{
+        flex: 100%;
+        padding: 1px;
     }
 
-    .flex-section-right{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+    .row img{
+        width: 30vh;
+        height: 30vh;
     }
 
-    .flex-section img{
-        width: 50%;
+    .column img{
+        width: 45vw;
+        height: 45vh;
     }
-
-    .flex-section-right img{
-        width: 50%;
-    }
-
-
-
-    .right img{
-        order:1;
-    }
-
-    div.container{
-        display:inline-block;
-    }
-    
-    p{
-        text-align:center;
-    }
-
 }
