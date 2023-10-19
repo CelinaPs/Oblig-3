@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.css" type="Text/Css">
         <link href="css/font/css/fontawesome.css" rel="stylesheet">
         <link href="css/font/css/brands.css" rel="stylesheet">
         <link href="css/font/css/solid.css" rel="stylesheet">
@@ -11,24 +11,37 @@
     </head>
     <body>
         <div id="grid-container">
-        <header>
-            <nav>
-                <a href="#" id="logo">Logo</a>
-                <div> <!--Flytta begge ikonene til høyre, et et eget element-->
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <i id="ham" class="fa-solid fa-bars"></i>
-                </div>
-                <ul class="navbar">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#products.html">Products</a></li> <!--Blir sent til siden produkts.html-->
-                    <li><a href="#services">Services</a></li>
-                </ul>
-            </nav>
-            <section>
-                <h1>Bolleoppskrifter</h1>
-                <a href="#" class="black-btn">Read more</a>
-            </section>
-        </header>
+            <header>
+                <!--Text helt på toppen-->
+                <section class="top-text">
+                    <article class="left-column">
+                       <p>Gratis frakt og retur!</p>
+                    </article>
+                    <article class="middle-column">
+                       <p>30 dagers åpent kjøp!</p>
+                    </article>
+                    <article class="right-column">
+                       <p>Hjemmelevering 2-5 dager!</p>
+                    </article>
+                 </section>
+                <nav>
+                    <a href="index.html" id="logo">NORDSKO</a><!--Blir sent til index.html-->
+                    <div> <!--Flytte alle ikonene til høyre, et et eget element-->
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i id="ham" class="fa-solid fa-bars"></i>
+                        <i class="fa-regular fa-user"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                    <ul class="navbar">
+                        <li><a href="catalog.html">NY</a></li>
+                        <li><a href="catalog.html">Dame</a></li> <!--Blir sent til catalog.html-->
+                        <li><a href="catalog.html">Men</a></li>
+                        <li><a href="catalog.html">Barn</a></li>
+                        <li><a href="catalog.html">Sport</a></li>
+                    </ul>
+                </nav>
+            </header>
         <main>
             <!--Seksjon 1-->
             <section class="flex-section">

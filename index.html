@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=Device=width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css" type="Text/Css">
         <link href="css/font/css/fontawesome.css" rel="stylesheet">
         <link href="css/font/css/brands.css" rel="stylesheet">
@@ -14,19 +14,19 @@
             <header>
                 <!--Text helt på toppen-->
                 <section class="top-text">
-                    <article class="left-col">
+                    <article class="left-column">
                        <p>Gratis frakt og retur!</p>
                     </article>
-                    <article class="middle-col">
+                    <article class="middle-column">
                        <p>30 dagers åpent kjøp!</p>
                     </article>
-                    <article class="right-col">
+                    <article class="right-column">
                        <p>Hjemmelevering 2-5 dager!</p>
                     </article>
                  </section>
                 <nav>
-                    <a href="index" id="logo">NORDSKO</a>
-                    <div> <!--Flytta begge ikonene til høyre, et et eget element-->
+                    <a href="index.html" id="logo">NORDSKO</a><!--Blir sent til index.html-->
+                    <div> <!--Flytte alle ikonene til høyre, et et eget element-->
                         <i class="fa-solid fa-magnifying-glass"></i>
                         <i id="ham" class="fa-solid fa-bars"></i>
                         <i class="fa-regular fa-user"></i>
@@ -34,37 +34,37 @@
                         <i class="fa-solid fa-bag-shopping"></i>
                     </div>
                     <ul class="navbar">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#products.html">Produkter</a></li> <!--Blir sent til products.html-->
-                        <li><a href="#">NY</a></li>
-                        <li><a href="#catalog.html">Dame</a></li>
-                        <li><a href="#">Men</a></li>
-                        <li><a href="#">Barn</a></li>
-                        <li><a href="#">Sport</a></li>
+                        <li><a href="catalog.html">NY</a></li>
+                        <li><a href="catalog.html">Dame</a></li> <!--Blir sent til catalog.html-->
+                        <li><a href="catalog.html">Men</a></li>
+                        <li><a href="catalog.html">Barn</a></li>
+                        <li><a href="catalog.html">Sport</a></li>
                     </ul>
                 </nav>
             </header>
             <main>
+                <!--Forside bildene-->
                 <section>
                 <div class="row">
                     <div class="column">
-                      <img class="fill" src="img/forside-venstre.jpg">
+                      <img class="fill" src="img/forside-venstre.jpg" alt="Forside-venstre">
                     </div>
                     <div class="column">
-                      <img class="fill" src="img/forside-høyre.png" style="fill: none;">
+                      <img class="fill" src="img/forside-høyre.png" alt="Forside-høyre">
                     </div>
                   </div>
                 </section>
-                <!--Se alle tilbud!-->
+                <!--Se alle tilbud! knappen-->
                 <section>
-                    <a href="#" class="black-btn">Se alle tilbud!</a>
+                    <a href="catalog.html" class="black-btn">Se alle tilbud!</a>
                 </section>
             </main>
             <footer>
-    
+            
             </footer>
             </div>
-            <script>
+            <!--Javascript fra Webutvikling time 16.10-->
+            <script> 
     
                 let x = document.querySelector(".navbar")
     

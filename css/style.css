@@ -9,7 +9,7 @@ body{
     padding: 1px;
     height: 100vh;
 }
-
+    
 header{
     background-color: rgb(27, 27, 27);
     height: 120px;
@@ -28,6 +28,8 @@ header nav{
 
 header nav div{
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 0;
 }
 
@@ -45,34 +47,40 @@ header nav div{
    }
 
 
- .left-col {
-    width: 33%;
-    text-align: left;
+ .left-column{
+    display: none;
  }
 
- .middle-col {
-    width: 33%;
-    text-align: left;
+ .middle-column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
  }
 
- .right-col {
-    width: 33%;
-    text-align: left;
+ .right-column{
+    display: none;
  }
 
 
 
-#logo{
+ #logo{
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
+    font-size: xx-large;
     color: black;
-
+    padding: 30px;
 }
 
 .navbar{
-    bottom: -40;
-    right: 0;
     position: absolute;
+    left: 25%;
+    right: 60%;
+    bottom: 25%;
     display: none;
 }
 
@@ -81,12 +89,12 @@ header nav div{
     display: block;
     color: rgb(19, 19, 19);
     text-align: center;
-    padding: 10px 10px;
+    padding: 10px 5px;
     text-decoration: none;
 }
 
 .navbar a:hover{
-    background-color: aqua;
+    background-color: rgb(223, 223, 223);
     color: black;
 }
 
@@ -94,7 +102,7 @@ header nav div{
     display: flex;
     flex-direction: column;
     position: absolute;
-    background-color: rgb(16, 16, 16);
+    background-color: rgb(0, 0, 0);
     margin: 0;
     padding: 0;
     top:40px;
@@ -110,6 +118,10 @@ header nav div{
     text-decoration: none;
 }
 
+.fa-user, .fa-heart, .fa-bag-shopping, .fa-magnifying-glass, #ham{
+    padding: 5px
+}
+
 .black-btn {
     display: flex;
     justify-content: center;
@@ -120,12 +132,12 @@ header nav div{
     text-decoration: none;
     background-color: rgb(30, 30, 30);
     color: rgb(255, 255, 255);
-    border-radius: 5px;
+    border-radius: 10px;
     font-weight: 400;
     position: absolute;
-    top: 30%;
-    left: 45%;
-    margin-right: -50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .black-btn text{
@@ -171,6 +183,21 @@ footer{
     #grid-container{
         grid-template-areas: "header header header" ". main ." "footer footer footer" ;
     }
+
+    .right-column{
+        display: block;
+        width: 33%;
+        text-align: center;
+        padding-right: 10px;
+    }
+
+    .left-column{
+        display: block;
+        width: 33%;
+        text-align: center;
+        padding-left: 5px;
+     }
+
     .navbar{
         display: flex;
         flex-direction: row;
@@ -182,6 +209,8 @@ footer{
     #ham, .fa-magnifying-glass{
         display: none;
     }
+
+    
 
         box-sizing: border-box;{
     }
@@ -198,11 +227,14 @@ footer{
     .row img{
         width: 50vw;
         height: 50vw;
+        min-height: 50%;
+
     }
 
     .column img{
         width: 48vw;
         height: 80vw;
+        min-height: 50%;
     }
 
     .categories{
@@ -211,7 +243,14 @@ footer{
     }
     
     .footer{
-        background-color: rgb(21, 21, 21);
+        display: flex;
+        justify-content: space-between;
+        column-count: 3;
+        color: white;
+        font-size: x-small;
+        font-weight:500;
+        margin: 0;
+        padding: 0;
     }
 
 }
