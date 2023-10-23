@@ -44,28 +44,28 @@ header nav div{
     column-span: all;
     margin: 0;
     padding: 0;
-   }
+}
 
 
- .left-column{
+.left-column{
     display: none;
- }
+}
 
- .middle-column{
+.middle-column{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     text-align: center;
- }
+}
 
- .right-column{
+.right-column{
     display: none;
- }
+}
 
 
 
- #logo{
+#logo{
 
     display: flex;
     justify-content: center;
@@ -208,38 +208,91 @@ footer{
     margin: auto;
     text-align: center;
     font-family: arial;
-  }
+}
   
-  .price{
+.price{
     color: grey;
     font-size: 10px;
     text-align: center;
     position: relative;
     top: -30px;
-  }
+}
 
-  .catalog h2{
+.catalog h2{
     font-size: 10px;
     text-align: center;
     position: relative;
     top: -25px;
-  }
+}
 
-  .catalog h1{
+.catalog h1{
     font-size: 8px;
     text-align: center;
     position: relative;
     top: -20px;
-  }
+}
 
-  /*Products*/
+/*Products*/
 
-  .produkt img{
+.produkt img{
     display: flex;
-    height: 50%;
-    width: 50%;
-  }
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
+    position: relative;
+}
 
+.produkt{
+    display: column;
+}
+
+.handlekurv{
+    display: block;
+    background-color: rgb(15, 15, 15);
+    color: rgb(255, 255, 255);
+    position: absolute;
+    padding: 20px;
+    text-align: center;
+    bottom: 20px;
+    width: 75%;
+}
+
+.str{
+    display: block;
+    background-color: rgb(157, 157, 157);
+    color: rgb(0, 0, 0);
+    position: absolute;
+    padding: 20px;
+    text-align: center;
+    bottom: 80px;
+    width: 75%;
+}
+
+.produkt img{
+    width: 100%;
+}
+
+.produkt section{
+    padding: 1rem;
+    width: 40%;
+    align-self: top;
+}   
+
+.produkt .prod-price{
+    padding: 1rem;
+    width: 40%;
+    align-self: left;
+}
+
+.size-container {
+    display: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+  
 
   /*Index*/
 @media only screen and (min-width:600px){
@@ -259,7 +312,7 @@ footer{
         width: 33%;
         text-align: center;
         padding-left: 5px;
-     }
+    }
 
     .navbar{
         display: flex;
@@ -358,5 +411,106 @@ footer{
         text-align: center;
         position: relative;
         top: -20px;
+    }
+
+    /*Produkt*/
+
+    .historiebar{
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        gap: 10px;
+        list-style: none;
+        margin: 0;
+        text-decoration: none;
+        font-size: 15px;
+        top: 100px;
+    }
+    
+    .produkt img{
+        display: flex;
+        height: 500px;
+        object-fit: cover;
+        position: absolute;
+        width: 50%;
+        left: 1%;
+        top: 25%;
+    }
+
+    .produkt{
+        display: flex;
+        flex-direction: flex;
+        justify-content: space-between;
+}
+
+    .produkt section{
+        padding: 1rem;
+        width: 40%;
+        align-self: top;
+        position: absolute;
+        align-self: center;
+        right: 1%;
+    }   
+
+    .produkt .prod-price{
+        padding: 1rem;
+        width: 40%;
+        align-self: left;
+        position: relative;
+    }
+
+    .size-container {
+        display: none;
+    }
+
+    .size-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        position: relative;
+        left: -25px;
+    }
+
+    .size{
+        margin: 5px;
+        padding: 10px 25px;
+        font-size: 10px;
+        background-color: #dddddd;
+        color: rgb(16, 16, 16);
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+
+    .size:hover{
+        background-color: #6f6f6f;
+    }
+
+    .handlekurv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 350px;
+        height: 50px;
+        padding: 0;
+        text-decoration: none;
+        background-color: rgb(30, 30, 30);
+        color: rgb(255, 255, 255);
+        border-radius: 2px;
+        font-weight: 400;
+        position: absolute;
+        bottom: -50%;
+        left: -135%;
+        transform: translate(15%, 60%);
+        align-content: center;
+    }
+
+    .str{
+        display: none;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
     }
 }
