@@ -331,7 +331,7 @@ a{
   /*Index*/
 @media only screen and (min-width:600px){
     #grid-container{
-        grid-template-areas: "header header header" ". main ." "footer footer footer" ;
+        display: grid;
     }
 
     a{
@@ -512,6 +512,22 @@ a{
         position: relative;
         left: -40px;
     }
+
+    .footer{
+        font-family: 'Montserrat', sans-serif;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: #f0f0f0;
+        padding: 1px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    
+    .footer{
+        text-align: center;
+    }
+    
 
     .size{
         margin: 5px;
