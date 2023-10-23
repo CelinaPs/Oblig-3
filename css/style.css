@@ -12,7 +12,25 @@ body{
     padding: 1px;
     height: 100vh;
 }
+
+body{
+    min-height: 100vh;
+}
+
+main{
+    grid-area: main;
+}
+
+main section img{
+    width: 100%;
+}
+
+footer{
+    grid-area: footer;
+}
     
+/*Navigasjon bar*/
+
 header{
     background-color: rgb(27, 27, 27);
     height: 120px;
@@ -35,6 +53,8 @@ header nav div{
     align-items: center;
     gap: 0;
 }
+
+/*Navgiasjon bar*/
 
 .top-text{
     font-family: 'Montserrat', sans-serif;
@@ -67,7 +87,7 @@ header nav div{
     display: none;
 }
 
-
+/*Logo*/
 
 #logo{
     font-family: 'Russo One', sans-serif;
@@ -79,6 +99,8 @@ header nav div{
     color: black;
     padding: 30px;
 }
+
+/*Navigation bar*/
 
 .navbar{
     font-family: 'Montserrat', sans-serif;
@@ -103,6 +125,11 @@ header nav div{
     color: black;
 }
 
+.fa-user, .fa-heart, .fa-bag-shopping, .fa-magnifying-glass, #ham{
+    padding: 5px
+}
+
+/*Hamburger meny*/
 
 .responsive{
     display: flex;
@@ -124,9 +151,7 @@ header nav div{
     text-decoration: none;
 }
 
-.fa-user, .fa-heart, .fa-bag-shopping, .fa-magnifying-glass, #ham{
-    padding: 5px
-}
+/*Svart knapp på forsiden*/
 
 .black-btn{
     font-family: 'Montserrat', sans-serif;
@@ -152,44 +177,13 @@ header nav div{
     justify-content: center;
 }
 
-body{
-    min-height: 100vh;
-}
-
-main{
-    grid-area: main;
-}
-
-main section img{
-    width: 100%;
-
-}
-
-footer{
-    grid-area: footer;
-}
-
-#services{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: rgb(179, 179, 179);
-    padding: 0;
-    justify-content: space-around;
-}
-
-#services h2{
-    width: 100%;
-    text-align: center;
-}
-
-#services article{
-    max-width: 300px;
-    width: 100%;
-    min-width: 200px;
-}
-
 /*Catalog*/
+
+/*Filter knapper*/
+
+.filter-item{
+    display: none;
+}
 
 .catalog{
     display: flex;
@@ -228,6 +222,8 @@ footer{
     top: -30px;
 }
 
+/*Text*/
+
 .catalog h2{
     font-size: 10px;
     text-align: center;
@@ -248,6 +244,7 @@ footer{
     display: flex;
     height: 500px;
     width: 500px;
+    width: 100%;
     object-fit: cover;
     position: relative;
 }
@@ -256,6 +253,13 @@ footer{
     display: flex;
     flex-direction: column;
 }
+
+.produkt section{
+    padding: 1rem;
+    width: 40%;
+}   
+
+/*Produkt text*/
 
 .produkt h2{
     position: absolute;
@@ -267,6 +271,22 @@ footer{
     position: absolute;
     bottom: 130px;
 }
+
+.prod-price{
+    padding: 1rem;
+    width: 40%;
+}
+
+.size-container{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/*Handlekurv knapp*/
 
 .handlekurv{
     display: block;
@@ -283,6 +303,8 @@ footer{
     background-color: #383838;
 }
 
+/*Størrelse knapper*/
+
 .str{
     display: block;
     background-color: rgb(219, 219, 219);
@@ -298,29 +320,6 @@ footer{
     background-color: rgb(165, 165, 165);
 }
 
-.produkt img{
-    width: 100%;
-}
-
-.produkt section{
-    padding: 1rem;
-    width: 40%;
-}   
-
-.prod-price{
-    padding: 1rem;
-    width: 40%;
-}
-
-.size-container {
-    display: none;
-}
-
-a{
-    text-decoration: none;
-    color: black;
-}
-
 #kontakt {
     display: none;
 }
@@ -331,6 +330,13 @@ a{
     #grid-container{
         grid-template-areas: "header header header" ". main ." "footer footer footer" ;
     }
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+    /*Nav bar*/
 
     .right-column{
         display: block;
@@ -358,7 +364,8 @@ a{
         display: none;
     }
 
-    
+    /*Index*/
+    /*Forside bilder*/
 
     *{
         box-sizing: border-box;
@@ -391,18 +398,32 @@ a{
         display: flex;
         padding: 0;
     }
-    
-    .footer{
-        display: flex;
-        justify-content: space-between;
-        column-count: 3;
-        color: white;
-        font-size: x-small;
-        font-weight:500;
-        margin: 0;
+
+    /*Filter*/
+    /* Brukte ChatGPT til å hjelp med finne feil med å få knappene ved siden av hverandre */
+
+    .filter-item{
+        margin-left: 10px;
         padding: 0;
+        display: inline-block;
+        list-style: none;
     }
 
+    .filter-item a{
+        position: relative;
+        left: -15%;
+        padding: 10px 103px;
+        font-size: 10px;
+        background-color: #dddddd;
+        color: rgb(16, 16, 16);
+        border-radius: 1px;
+        text-decoration: none;
+    }
+
+    .filter-item:hover a{
+        background-color: #6f6f6f;
+    }
+    
     /*Catalog*/
 
     .catalog{
@@ -424,6 +445,8 @@ a{
     .catalog img{
         margin: -50px 0px -50px 0px;
     }
+
+    /*Catalog text*/
     
     .price{
         color: grey;
@@ -446,20 +469,9 @@ a{
         position: relative;
         top: -20px;
     }
-    /*Produkt*/
 
-    .historiebar{
-        display: flex;
-        flex-direction: row;
-        position: absolute;
-        gap: 10px;
-        list-style: none;
-        margin: 0;
-        text-decoration: none;
-        font-size: 15px;
-        top: 100px;
-    }
-    
+    /*Products*/
+
     .produkt img{
         display: flex;
         height: 500px;
@@ -484,16 +496,18 @@ a{
         right: 1%;
     }
 
+    /*Størrelse knapper*/
+
     .size-container {
         display: none;
     }
 
-    .size-container {
+    .size-container{
         display: flex;
         flex-wrap: wrap;
         justify-content: left;
         position: relative;
-        left: -25px;
+        left: -40px;
     }
 
     .size{
@@ -502,14 +516,18 @@ a{
         font-size: 10px;
         background-color: #dddddd;
         color: rgb(16, 16, 16);
+        text-align: center;
         border: none;
         border-radius: 5px;
         text-decoration: none;
+        flex: 0 0 calc(20% - 10px);
     }
 
     .size:hover{
         background-color: #6f6f6f;
     }
+
+    /*Handlekurv knapp*/
 
     .handlekurv{
         display: flex;
@@ -525,7 +543,7 @@ a{
         font-weight: 400;
         position: absolute;
         bottom: -50%;
-        left: -180%;
+        left: -150%;
         transform: translate(15%, 60%);
         align-content: center;
     }
@@ -533,7 +551,7 @@ a{
     .produkt h2{
         position: absolute;
         bottom: 100%;
-        left: 1px;
+        left: -19px;
         padding-bottom: 10px;
     }
     
@@ -542,17 +560,14 @@ a{
         padding: 1px;
         top: -40px;
         width: 40%;
-        left: 1px;
+        left: -19px;
         bottom: 350px;
     }
 
+    /*Størrelse knapp*/
+
     .str{
         display: none;
-    }
-
-    a{
-        text-decoration: none;
-        color: black;
     }
     
     .flex-section{
@@ -571,19 +586,5 @@ a{
         width: 40%;
         align-self: center;
     }
-
-    /*Brukte Chat GPT her for å få hjelp med å få lagt den på bunn av nettside*/
-    #kontakt {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        background-color: rgb(218, 218, 218);
-        padding: 1px;
-        justify-content: space-around;
-        align-items: flex-end;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        text-align: center;
-}
+    
 }
