@@ -324,6 +324,9 @@ a{
     display: none;
 }
 
+.footer{
+    display: none;
+}
 
   /*Index*/
 @media only screen and (min-width:600px){
