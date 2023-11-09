@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Analyse</title>
+  </head>
+  <body>
+    <main>
+        <h1>Oblig 4</h1>
+        <h2>Analyse av oblig 3</h2>
+        <section>
+            <table>
+                <tr>
+                    <th>Lighthouse</th>
+                    <th>Webaim</th>
+                    <th>Chat GPT</th>
+                </tr>
+                <tr>
+                    <td><p>Her er SEO scoren av forsiden på desktop. Eneste klagen den har er at jeg ikke har brukt "meta" beskrivelse.</p>
+                        <a href="#"><img src="img/seo-forside-desktop.png" alt="SEO-Forside-Desktop" style="width:100%"></td>
+                    <td><p>Jeg fikk klage om at jeg ikke hadde brukt noe heading struktur. Jeg fikk klager på at teskten på toppen var for liten, denne feilen går igjen på alle sidene.</p>
+                        <p>"Redundant link" Alle linkene går til sammen nettside, Webaim er ikke glad i dette fordi det er ekstra arbeid for brukerne. I realitet skal alle knappene ha forskjellige linker, men dette vet ikke webaim, så jeg velger litt å se bort i fra denne.</p>
+                        <a href="#"><img src="img/webaim-forside-alerts.png" alt="webaim-forside-alerts" style="width:100%"></td>
+                    <td><h3>SEO</h3>
+                        <p>Legg til en metabeskrivelse (`meta name="description" content="Beskrivelse av nettstedet"`) for å gi en kort beskrivelse av nettstedet. Dette vil bli vist i søkeresultatene og kan påvirke klikkfrekvensen.</p>
+                        <p>Feil i link-elementet: I link-elementet er type-attributtet satt til Text/Css, men det skal være text/css.</p>
+                        <p>Sørg for at hver side har en unik og beskrivende tittel "title". Tittelen bør reflektere innholdet på den spesifikke siden.</p>
+                        <p>Bilder mangler beskrivende alt-attributt: Du har brukt alt-attributtet for bildene, men det kan være lurt å gi en mer beskrivende tekst for bedre forståelse av bildene for søkemotorer.</p>
+                        <h3>UU</h3>
+                        <p>Manglende tekstalternativer for ikoner: Selv om du bruker ikoner, mangler det beskrivende tekstalternativer (for eksempel aria-label) som er viktige for skjermlesere.</p>
+                        <p>Fargekontrast: Sørg for at tekst og bakgrunn har tilstrekkelig kontrast for bedre lesbarhet, spesielt for personer med nedsatt syn.</p>
+                        <p>Navigasjonsrekkefølge: Sjekk at navigasjonsrekkefølgen er logisk for tastaturbrukere og skjermlesere. Bruk av semantiske HTML-elementer som "nav", "header", og "footer" kan hjelpe med dette.</p>
+                        <p>Skjult JavaScript: Selv om du har inkludert JavaScript, bør det også være funksjonelt uten JavaScript for brukere som har deaktivert det.</p>
+                        <p>Kodeoptimalisering: Fjern unødvendig kode og kommentarer for å redusere lastingstid og forbedre ytelsen.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><p>Her er SEO scoren av forsiden på mobil. Her har jeg fått klager på at jeg ikke har brukt "meta" beskrivelse, og at skrift størrelsen ikke er bra nok.</p>
+                        <a href="#"><img src="img/seo-forside-mobil.png" alt="seo-forside-mobil" style="width:100%"></td>
+                    <td>Row 1, Column 2</td>
+                    <td>Row 1, Column 3</td>
+                </tr>
+                <tr>
+                    <td><p>Her er SEO scoren av produktsiden på desktop. Eneste klagen den har er at jeg ikke har brukt "meta" beskrivelse.</p>
+                        <a href="#"><img src="img/seo-produktside-desktop.png" alt="seo-produktside-desktop" style="width:100%"></a></td>
+                    <td>Row 2, Column 2</td>
+                    <td>
+                        <h3>SEO</h3>
+                        <p>Du har inkludert en tittel "title" som er bra for SEO. Den bør være beskrivende og unik for hver side.</p>
+                        <p>Du mangler en metabeskrivelse. En metabeskrivelse gir en kort oversikt over innholdet på siden og kan være nyttig for søkemotorer og brukere.</p>
+                        <p>Du har inkludert alternative tekster for bildene, noe som er bra for SEO. Husk å gi beskrivende alternative tekster for å forbedre forståelsen av bildene for søkemotorer.</p>
+                        <h3>UU</h3>
+                        <p>Tastaturnavigasjon: Sjekk om nettstedet er navigerbart og fungerer korrekt ved bruk av tastaturet alene, uten avhengighet av musen.</p>
+                        <p>Alternativ tekst for ikoner: Inkluder alternative tekster (for eksempel aria-label) for å gi meningsfulle beskrivelser av ikonfunksjonene, spesielt viktig for skjermleserbrukere.</p>
+                        <p>Bruk semantiske HTML5-elementer for å organisere innholdet på en meningsfull måte. Du har allerede brukt noen semantiske elementer som "header", "section", "main", og "footer", som er bra.</p>
+                        <p>Skjult tekst: Unngå å skjule tekst eller innhold som kun vises når JavaScript er aktivert, da dette kan være vanskelig å oppdage for skjermlesere og søkemotorer.</p>
+                        <p>Kodeoptimalisering: Fjern unødvendig kode og kommentarer for å forbedre lastingstiden og nettstedets ytelse.</p>
+                        <p>Kontaktinformasjon: Du har inkludert kontaktinformasjon i foteren, noe som er viktig for brukere som trenger å komme i kontakt med nettstedet.</p>
+                        <p>Husk å tilpasse nettstedet ditt etter din målgruppe og sjekke retningslinjer fra W3C og andre relevante standarder for universell utforming.</p></td>
+                </tr>
+                <tr>
+                    <td><p>Her er SEO scoren av produktsiden på mobil. Eneste klagen den har er at jeg ikke har brukt "meta" beskrivelse.</p>
+                        <a href="#"><img src="img/seo-produktside-mobil.png" alt="seo-produktside-mobil" style="width:100%"></td>
+                    <td>Row 3, Column 2</td>
+                    <td>Row 3, Column 3</td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#"><img src="img/seo-catalog-desktop.png" alt="seo-catalog-desktop" style="width:100%"></td>
+                    <td>Row 4, Column 2</td>
+                    <td><h3>SEO</h3>
+                        <p>Du har inkludert riktig charset og viewport. Tittelen på siden "title" er også angitt, noe som er bra for SEO.</p>
+                        <p>Feil i link-elementet: Igjen er `type`-attributtet satt til `Text/Css`. Det skal være `text/css`</p>
+                        <p>Du har inkludert alternative tekster for bildene, noe som er viktig for SEO. Dette gir beskrivelser av bildene til søkemotorer</p>
+                        <p></p>
+                        <h3>UU</h3>
+                        <p>Sørg for at tekst og bakgrunn har god kontrast for å sikre lesbarhet, spesielt for personer med nedsatt syn</p>
+                        <p>Sørg for at nettstedet er navigerbart og funksjonelt ved bruk av tastaturet alene, uten bruk av mus. Dette er viktig for personer med motoriske utfordringer.</p>
+                        <p>Selv om du bruker ikoner, bør du inkludere alternative tekster (f.eks. `aria-label`) for å gi en meningsfull beskrivelse av ikonenes funksjon.</p>
+                        <p>Bruk av semantiske HTML5-elementer.</p>
+                        <p> Sørg for at nettstedet er funksjonelt selv om JavaScript er deaktivert, slik at brukere med JavaScript-avslått eller eldre nettlesere kan få tilgang til innholdet.</p>
+                        <p></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Jeg fikk klager på at jeg ikke har en meta beskrivelse, i tillegg til at teksten ikke er gyldig.</p>
+                        <a href="#"><img src="img/seo-catalog-mobil.png" alt="seo-catalog-mobil" style="width:100%"></td>
+                    <td>Row 5, Column 2</td>
+                    <td>Row 5, Column 3</td>
+                </tr>
+                <tr>
+                    <td>Row 6, Column 1</td>
+                    <td>Row 6, Column 2</td>
+                    <td>Row 6, Column 3</td>
+                </tr>
+              </table>
+        </section>
+    </main>
+	<script src="index.js"></script>
+  </body>
+</html>
+<!--Kilder
+https://www.w3schools.com/html/html_tables.asp-->
