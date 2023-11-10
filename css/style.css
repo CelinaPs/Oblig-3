@@ -62,11 +62,11 @@ header nav div{
     justify-content: space-between;
     column-count: 3;
     color: white;
-    font-size: x-small;
+    font-size: small;
     font-weight:500;
     column-gap: 33%;
     column-span: all;
-    margin: 0;
+    margin-bottom: 0;
     padding: 0;
 }
 
@@ -452,25 +452,26 @@ a{
     /*Catalog text*/
     
     .price{
-        color: grey;
-        font-size: 10px;
+        color: rgb(26, 26, 26);
+        font-size: 15px;
+        font-weight: bold;
         text-align: center;
         position: relative;
-        top: -30px;
+        top: -54px;
     }
 
     .catalog h2{
         font-size: 12px;
         text-align: center;
         position: relative;
-        top: -25px;
+        top: -44px;
     }
 
     .catalog h1{
-        font-size: 10px;
+        font-size: 15px;
         text-align: center;
         position: relative;
-        top: -20px;
+        top: -35px;
     }
 
     /*Products*/
@@ -612,7 +613,21 @@ a{
         border: 1px solid black;
     }
 
-    .table img{
+    table img {
         width: 50%;
+        height: 50%;
     }
+
+    table {
+        width: 100%;
+        table-layout: fixed;
+    }
+    
+    th, td {
+        width: 25%;
+        text-align: left;
+        padding: 10px;
+    }
+  
+  
 }

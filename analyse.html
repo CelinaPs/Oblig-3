@@ -11,19 +11,30 @@
     <main>
         <h1>Oblig 4</h1>
         <h2>Analyse av oblig 3</h2>
+        <h3>Del 2</h3>
+        <section>
+            <p></p>
+            <a href="#"><img src="img/google-sok.png" alt="SEO-Forside-Desktop" style="width:100%">
+        </section>
         <section>
             <table>
                 <tr>
                     <th>Lighthouse</th>
                     <th>Webaim</th>
                     <th>Chat GPT</th>
+                    <th>Sammenligning</th>
                 </tr>
                 <tr>
                     <td><p>Her er SEO scoren av forsiden på desktop. Eneste klagen den har er at jeg ikke har brukt "meta" beskrivelse.</p>
-                        <a href="#"><img src="img/seo-forside-desktop.png" alt="SEO-Forside-Desktop" style="width:100%"></td>
-                    <td><p>Jeg fikk klage om at jeg ikke hadde brukt noe heading struktur. Jeg fikk klager på at teskten på toppen var for liten, denne feilen går igjen på alle sidene.</p>
+                        <a href="#"><img src="img/seo-forside-desktop.png" alt="Webaim-Forside-Desktop" style="width:100%"></td>
+                    <td><a href="#"><img src="img/webaim-forside-summary.png" alt="Webaim-forside-summary" style="width:100%">
+                        <a href="#"><img src="img/webaim-forside-alerts.png" alt="webaim-forside-alerts" style="width:100%">
+                        <p>Jeg fikk klage om at jeg ikke hadde brukt noe heading struktur.</p>
+                        <a href="#"><img src="img/webaim-toptext.png" alt="Webaim-toptext" style="width:100%">
+                        <p>Jeg fikk klager på at teskten på toppen var for liten, denne feilen går igjen på alle sidene.</p>
+                        <a href="#"><img src="img/webaim-produkter.png" alt="Webaim-produkter" style="width:100%">
                         <p>"Redundant link" Alle linkene går til sammen nettside, Webaim er ikke glad i dette fordi det er ekstra arbeid for brukerne. I realitet skal alle knappene ha forskjellige linker, men dette vet ikke webaim, så jeg velger litt å se bort i fra denne.</p>
-                        <a href="#"><img src="img/webaim-forside-alerts.png" alt="webaim-forside-alerts" style="width:100%"></td>
+                    </td>
                     <td><h3>SEO</h3>
                         <p>Legg til en metabeskrivelse (`meta name="description" content="Beskrivelse av nettstedet"`) for å gi en kort beskrivelse av nettstedet. Dette vil bli vist i søkeresultatene og kan påvirke klikkfrekvensen.</p>
                         <p>Feil i link-elementet: I link-elementet er type-attributtet satt til Text/Css, men det skal være text/css.</p>
@@ -36,17 +47,29 @@
                         <p>Skjult JavaScript: Selv om du har inkludert JavaScript, bør det også være funksjonelt uten JavaScript for brukere som har deaktivert det.</p>
                         <p>Kodeoptimalisering: Fjern unødvendig kode og kommentarer for å redusere lastingstid og forbedre ytelsen.</p>
                     </td>
+                    <td><h3>SEO</h3>
+                        <p>Alle nettsidene klaget på meta beskrivelse.</p>
+                        <p>Chat GPT er eneste som har noe annet å si på SEO bortsett fra meta beskrivelse.</p>
+                        <h3>UU</h3>
+                        <p>Både Chat GPT og Webiam klaget på mangel av "header" struktur.</p>
+                        <p>Chat GPT klager på bildenes "alt-attributt"</p>
+                        <p>Webiam er eneste programmet som klager på at jeg har flere av samme linker.</p>
+                        <p>Chat GPT har mange klager og kommentarer som de andre programmene ikke har nevnt noe på.</p>
+                    </td>
                 </tr>
                 <tr>
                     <td><p>Her er SEO scoren av forsiden på mobil. Her har jeg fått klager på at jeg ikke har brukt "meta" beskrivelse, og at skrift størrelsen ikke er bra nok.</p>
                         <a href="#"><img src="img/seo-forside-mobil.png" alt="seo-forside-mobil" style="width:100%"></td>
-                    <td>Row 1, Column 2</td>
-                    <td>Row 1, Column 3</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td><p>Her er SEO scoren av produktsiden på desktop. Eneste klagen den har er at jeg ikke har brukt "meta" beskrivelse.</p>
                         <a href="#"><img src="img/seo-produktside-desktop.png" alt="seo-produktside-desktop" style="width:100%"></a></td>
-                    <td>Row 2, Column 2</td>
+                    <td><a href="#"><img src="img/webaim-produktside-sum.png" alt="seo-produktside-summary" style="width:100%">
+                        <a href="#"><img src="img/webaim-produktside-alerts.png" alt="seo-produktside-alerts" style="width:100%"></td>
+                        <p>Webaim har gitt de samme klagene som jeg fikk på forsiden, siden klagene kommer fra min "nav" og topp teksten min som er samme på alle nettsidene.</p>
                     <td>
                         <h3>SEO</h3>
                         <p>Du har inkludert en tittel "title" som er bra for SEO. Den bør være beskrivende og unik for hver side.</p>
@@ -55,22 +78,36 @@
                         <h3>UU</h3>
                         <p>Tastaturnavigasjon: Sjekk om nettstedet er navigerbart og fungerer korrekt ved bruk av tastaturet alene, uten avhengighet av musen.</p>
                         <p>Alternativ tekst for ikoner: Inkluder alternative tekster (for eksempel aria-label) for å gi meningsfulle beskrivelser av ikonfunksjonene, spesielt viktig for skjermleserbrukere.</p>
-                        <p>Bruk semantiske HTML5-elementer for å organisere innholdet på en meningsfull måte. Du har allerede brukt noen semantiske elementer som "header", "section", "main", og "footer", som er bra.</p>
+                        <p>Du har brukt noen semantiske elementer som "header", "section", "main", og "footer", som er bra.</p>
                         <p>Skjult tekst: Unngå å skjule tekst eller innhold som kun vises når JavaScript er aktivert, da dette kan være vanskelig å oppdage for skjermlesere og søkemotorer.</p>
                         <p>Kodeoptimalisering: Fjern unødvendig kode og kommentarer for å forbedre lastingstiden og nettstedets ytelse.</p>
                         <p>Kontaktinformasjon: Du har inkludert kontaktinformasjon i foteren, noe som er viktig for brukere som trenger å komme i kontakt med nettstedet.</p>
-                        <p>Husk å tilpasse nettstedet ditt etter din målgruppe og sjekke retningslinjer fra W3C og andre relevante standarder for universell utforming.</p></td>
+                    <td><h3>SEO</h3>
+                        <p>Alle nettsidene klaget på meta beskrivelse.</p>
+                        <p>ChatGPT gir skryt på alternativ tekst til bildene, men nevner at teksten må være bra og beskrivende.</p>
+                        <h3>UU</h3>
+                        <p>Chat GPT er fornøyd med bruk av semantiske elementer.</p>
+                        <p>Chat GPT ber meg om å sjekke om koden er optimalisert og om nettsiden er optimalisert til tastaturnavigasjon.</p>
+
+                    </td>
                 </tr>
                 <tr>
                     <td><p>Her er SEO scoren av produktsiden på mobil. Eneste klagen den har er at jeg ikke har brukt "meta" beskrivelse.</p>
                         <a href="#"><img src="img/seo-produktside-mobil.png" alt="seo-produktside-mobil" style="width:100%"></td>
-                    <td>Row 3, Column 2</td>
-                    <td>Row 3, Column 3</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td>
                         <a href="#"><img src="img/seo-catalog-desktop.png" alt="seo-catalog-desktop" style="width:100%"></td>
-                    <td>Row 4, Column 2</td>
+                    <td><p>Får gjentagende feil fra topp teksten og nav.</p>
+                        <a href="#"><img src="img/webaim-katalog-sum.png" alt="webaim-katalog-sum" style="width:100%">
+                        <a href="#"><img src="img/webaim-katalog-alert.png" alt="webaim-katalog-alert" style="width:100%">
+                        <p>Webaim klager på at jeg har brukt for liten tekst på pris og på produkt navn. Siden jeg har 8 produkter, får jeg feilen 8x2 ganger. I tillegg till at alle 8 produktene har en link som leder til samme nettside.</p>
+                        <a href="#"><img src="img/webaim-katalog-produkter.png" alt="webaim-katalog-produkter" style="width:100%">
+                        <p>I tillegg til at teksten på pris ikke hadde bra nok kontrast fra bakgrunnsfargen.</p>
+                    </td>
                     <td><h3>SEO</h3>
                         <p>Du har inkludert riktig charset og viewport. Tittelen på siden "title" er også angitt, noe som er bra for SEO.</p>
                         <p>Feil i link-elementet: Igjen er `type`-attributtet satt til `Text/Css`. Det skal være `text/css`</p>
@@ -80,24 +117,53 @@
                         <p>Sørg for at tekst og bakgrunn har god kontrast for å sikre lesbarhet, spesielt for personer med nedsatt syn</p>
                         <p>Sørg for at nettstedet er navigerbart og funksjonelt ved bruk av tastaturet alene, uten bruk av mus. Dette er viktig for personer med motoriske utfordringer.</p>
                         <p>Selv om du bruker ikoner, bør du inkludere alternative tekster (f.eks. `aria-label`) for å gi en meningsfull beskrivelse av ikonenes funksjon.</p>
-                        <p>Bruk av semantiske HTML5-elementer.</p>
-                        <p> Sørg for at nettstedet er funksjonelt selv om JavaScript er deaktivert, slik at brukere med JavaScript-avslått eller eldre nettlesere kan få tilgang til innholdet.</p>
+                        <p>Sørg for at nettstedet er funksjonelt selv om JavaScript er deaktivert, slik at brukere med JavaScript-avslått eller eldre nettlesere kan få tilgang til innholdet.</p>
                         <p></p>
+                    </td>
+                    <td><h3>SEO</h3>
+                        <p>Alle nettsidene klaget på meta beskrivelse.</p>
+                        <p>Chat GPT gir skryt for at jeg har med alternativ tekst for bildene, men klager på at jeg ikke har det til ikoner.</p>
+                        <h3>UU</h3>
+                        <p>Webaim kommenterte på at teksten min noen steder var alt for liten, og at farge kontrasten på noen tekster ikke var bra nok.</p>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <p>Jeg fikk klager på at jeg ikke har en meta beskrivelse, i tillegg til at teksten ikke er gyldig.</p>
+                        <p>Jeg fikk klager på at jeg ikke har en meta beskrivelse, i tillegg til at fonten ikke er gyldig.</p>
                         <a href="#"><img src="img/seo-catalog-mobil.png" alt="seo-catalog-mobil" style="width:100%"></td>
-                    <td>Row 5, Column 2</td>
-                    <td>Row 5, Column 3</td>
-                </tr>
-                <tr>
-                    <td>Row 6, Column 1</td>
-                    <td>Row 6, Column 2</td>
-                    <td>Row 6, Column 3</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                 </tr>
               </table>
+        </section>
+        <section>
+            <h3>Forbedrende tiltak</h3>
+            <a href="#"><img src="img/" alt="#" style="width:100%">
+            <ol class="Tiltak">
+                <il>
+                    <p>1</p>
+                    <p>2</p>
+                </il>
+            </ol>
+            <table>
+                <tr>
+                    <th>Før</th>
+                    <th>Etter</th>
+                </tr>
+                <tr>
+                    <td><p>Fikk klager på at teksten var for liten og dårlig kontrast.</p>
+                        <a href="#"><img src="img/produkt-før.png" alt="Produkt-før" style="width:100%"></td>
+                    <td><p>Lagde teksten større, og endret fargen til teksten.</p>
+                        <a href="#"><img src="img/produkt-etter.png" alt="produkt-etter" style="width:100%"></a></td>
+                </tr>
+                <tr>
+                    <td><p>Fikk klager på at teksten var for liten.</p>
+                        <a href="#"><img src="img/top-text-før.png" alt="Top-text-før" style="width:100%"></td>
+                    <td><p>Her har jeg endret størrelsen på teksten på alle sidene. Jeg vil ikke ha teksten for stor siden jeg ikke ønsker at det tar mye oppmerksomhet.</p>
+                        <a href="#"><img src="img/top-text-etter.png" alt="Top-text-etter" style="width:100%"></td>
+                </tr>
+            </table>
         </section>
     </main>
 	<script src="index.js"></script>
