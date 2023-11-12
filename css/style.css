@@ -216,26 +216,26 @@ header nav div{
   
 .price{
     color: rgb(25, 25, 25);
-    font-size: 10px;
+    font-size: 13px;
     text-align: center;
     position: relative;
-    top: -30px;
+    top: -40px;
 }
 
 /*Text*/
 
 .catalog h2{
-    font-size: 10px;
+    font-size: 13px;
     text-align: center;
     position: relative;
-    top: -25px;
+    top: -30px;
 }
 
 .catalog h1{
-    font-size: 8px;
+    font-size: 12px;
     text-align: center;
     position: relative;
-    top: -20px;
+    top: -25px;
 }
 
 /*Products*/
