@@ -568,11 +568,14 @@ a{
         align-content: center;
     }
 
-    .produkt h2{
+   
+
+    .produkt h1{
         position: absolute;
         bottom: 100%;
         left: -19px;
         padding-bottom: 10px;
+        font-size: x-large;
     }
     
     .prod-price{
